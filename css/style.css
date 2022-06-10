@@ -2,8 +2,10 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
-  }
-  
+    background-color: black;
+    color: chartreuse;
+    
+}
   textarea{
     background: transparent;
     border: none;
@@ -12,17 +14,24 @@ body {
     border-left: 1px solid black;
     padding: 10px;
   }
-  
+  p{
+    color: chartreuse;
+  }
+  .Momento{
+    color: chartreuse;
+    font-size: 20px;
+  }
   .jumbotron {
     text-align: center;
     background-color: transparent;
-    color: black;
+    color: chartreuse;
     border-radius: 0;
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid chartreuse;
   }
   
   .description{
     white-space: pre-wrap;
+    color: yellow;
   }
   
   .time-block{
@@ -33,13 +42,13 @@ body {
   .row {
     white-space: pre-wrap;
     height: 80px;
-    border-top: 1px solid white;;
+    border-top: 1px solid chartreuse;
   }
   
   .hour {
-    background-color: #ffffff;
-    color: #000000;
-    border-top: 1px dashed #000000;
+    background-color: black;
+    color: chartreuse;
+    border-top: 1px dashed chartreuse;
   }
   
   .past {
@@ -58,10 +67,11 @@ body {
   }
   
   .saveBtn {
-    border-left: 1px solid black;
+    border-style: solid;
+    border-color: chartreuse;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: #06AED5;
+    background-color: black;
     color: white;
   }
   
