@@ -1,11 +1,11 @@
 $(document).ready(function() {
-    $("#momento").text (moment().format("MMMM Do YY, h:mm:ss a"));
+    $("#momento").text (moment().format("MMMM Do YY, h:mm:ss"));
     $(".saveBtn").on("click",function() {
 
 console.log(this);
 var text = $(this).siblings(".description").val();
 var time = $(this).parent().attr("id");
-localStorage.setItem(text, time);
+localStorage.setItem(time ,text);
     })
 $('#hour1 .description').val(localStorage.getItem('hour1')) ;
 $('#hour2 .description').val(localStorage.getItem('hour2')) ;
@@ -21,7 +21,7 @@ function currentTime(){
     var ahorita = moment().hour();
     $('.time-block').each(function () {
         var timeBlock=parseint($(this).attr('id').split('hour')[1])
-        console.log(timeBlock, ahorita)
+        console.log(ahorita, timeBlock)
         if (ahorita > timeBlock){
             $(this).addClass('past');
             $(this).removeClass('future');
